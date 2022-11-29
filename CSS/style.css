@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body {
+    background-color: #202124;
+    width: 100%;
+    height: 100vh;
+}
+header {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    color: #fff;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#search-input {
+    background-color: #525356;
+    color: #ddd;
+    border: none;
+    padding: 13px;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+#search-input::placeholder {
+    color: #ddd;
+}
+#btn-new-note {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff; 
+    padding: 13px 13px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#btn-new-note:hover {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+.notes-container {
+    padding: 30px 30px;
+    display: flex;
+    gap: 2rem;
+}
+.note-content {
+    background:#202124;
+    border: 2px solid #ddd;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+.note-content:hover > i {
+    opacity: 1;
+}
+textarea {
+    background-color: #202124;
+    color: #ddd;
+    outline: none;
+    border:none;
+    width: 100%;
+    height: 88%;
+    padding: 28px 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    resize: none;
+}
+.bi-pin {
+    color: gray;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+.bi-x-lg,.bi-file-earmark-plus,.bi-pencil,.bi-check-lg {
+    color: gray;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+.bi-x-lg {
+    right: 7px;
+    top: 5px;
+}
+.bi-file-earmark-plus {
+    right: 10px;
+    bottom: 5px;
+}
+.bi-pencil {
+    right: 45px;
+    bottom: 5px;
+}
+.bi-check-lg {
+    right: 7px;
+    bottom: 5px;
+    display: none;
+}
+.bi-x-lg:hover,
+.bi-file-earmark-plus:hover,
+.bi-pencil:hover,
+.bi-check-lg:hover {
+    color: #fff;
+}
+.note-content.fixed,.fixed textarea {
+    background-color: #3c3c3f;
+}
+.fixed .bi-pin {
+    opacity: 1;
+    color: #fff;
+}
+
