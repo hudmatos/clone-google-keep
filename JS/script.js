@@ -26,8 +26,7 @@ function createNotes() {
 
     const textarea = document.createElement("textarea");
     textarea.placeholder="Digite sua tarefa";
-    textarea.focus();
- 
+
     const pinIcon = document.createElement("i");
     pinIcon.classList.add("bi");
     pinIcon.classList.add("bi-pin");
@@ -56,5 +55,6 @@ function createNotes() {
     note.appendChild(checkIcon);
     notesContainer.appendChild(note);
 
+    textarea.focus();
 }
 
