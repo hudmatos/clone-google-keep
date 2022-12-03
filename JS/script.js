@@ -5,11 +5,7 @@ const searchInput = document.querySelector("#search-input");
 searchInput.addEventListener("input", filterNotes);
 
 function filterNotes() {
-    const inputValue = searchInput.value.toLowerCase().trim();
-    if(inputValue.length == 0) {
-        for(const note of notesContainer.children) {
-            note.style.display = "inline-block"; } }
-            
+    const inputValue = searchInput.value.toLowerCase().trim();        
     for(const note of notesContainer.children) {
         const noteText = note.querySelector("textarea").value.toLowerCase();
         if(inputValue != noteText.slice(0,inputValue.length)) {
