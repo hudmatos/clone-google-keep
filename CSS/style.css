@@ -91,7 +91,7 @@ textarea {
     transition: 0.4s;
     opacity: 0;
 }
-.bi-x-lg,.bi-file-earmark-plus,.bi-check2-square {
+.bi-x-lg {
     color: gray;
     position: absolute;
     font-size: 20px;
@@ -103,19 +103,8 @@ textarea {
     right: 7px;
     top: 5px;
 }
-.bi-file-earmark-plus {
-    right: 7px;
-    top: 78px;
-}
-.bi-check2-square {
-    right: 7px;
-    top: 40px;
-}
-.bi-x-lg:hover,
-.bi-file-earmark-plus:hover,
-.bi-pencil:hover,
-.bi-check-lg:hover,
-.bi-check2-square:hover {
+
+.bi-x-lg:hover {
     color: #fff;
 }
 .note-content.fixed,.fixed textarea {

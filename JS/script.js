@@ -25,7 +25,9 @@ function createNotes(obj) {
 
     const textarea = document.createElement("textarea");
     textarea.placeholder="Digite sua tarefa";
-    textarea.value = obj.description;
+    if(obj.description == undefined) {textarea.value = "";}
+    else{textarea.value = obj.description;}
+    
 
     const pinIcon = document.createElement("i");
     pinIcon.classList.add("bi");
@@ -42,20 +44,9 @@ function createNotes(obj) {
         note.remove()
         updateLocalStorage(); })
 
-    const fileIcon = document.createElement("i");
-    fileIcon.classList.add("bi");
-    fileIcon.classList.add("bi-file-earmark-plus");
-
-    const checkIcon = document.createElement("i")
-    checkIcon.classList.add("bi");
-    checkIcon.classList.add("bi-check2-square")
-    checkIcon.addEventListener("click", () => {})
-
     note.appendChild(textarea);
     note.appendChild(pinIcon);
     note.appendChild(xIcon);
-    note.appendChild(fileIcon);
-    note.appendChild(checkIcon);
     notesContainer.appendChild(note);
 
     textarea.focus();
