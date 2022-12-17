@@ -66,7 +66,7 @@ function updateLocalStorage() {
 function updatePage() {
     let notesList = JSON.parse(localStorage.getItem("notes"));
     for(var cont of notesList) {
-        createNotes(cont);
+        console.log(cont.description)
     }
     
 }
