@@ -118,11 +118,18 @@ textarea {
 @media screen and (max-width: 790px) {
     header {
         display: block;
-        padding-right: 7px; 
+        padding: 5px; 
         
     }
     .search-container {
         display: inline-block;
+    }
+}
+@media screen and (max-width: 563px) {
+    #search-input {
+        width: 200px;
+        margin-top: 10px;
+        
     }
 }
 
