@@ -118,18 +118,28 @@ textarea {
 @media screen and (max-width: 790px) {
     header {
         display: block;
-        padding: 5px; 
+        padding: 10px; 
         
     }
     .search-container {
         display: inline-block;
     }
+    .notes-container {
+        padding-left: 10px;
+    }
 }
-@media screen and (max-width: 563px) {
+@media screen and (max-width: 569px) {
     #search-input {
-        width: 200px;
+        width: 300px;
         margin-top: 10px;
-        
+    }
+    #btn-new-note {
+        padding: 13px 5px;
+    }  
+}
+@media screen and (max-width: 454px) {
+    #search-input {
+        width: 250px;
     }
 }
 
