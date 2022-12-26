@@ -115,3 +115,14 @@ textarea {
     color: #fff;
 }
 
+@media screen and (max-width: 790px) {
+    header {
+        display: block;
+        padding-right: 7px; 
+        
+    }
+    .search-container {
+        display: inline-block;
+    }
+}
+
