@@ -142,4 +142,9 @@ textarea {
         width: 250px;
     }
 }
+@media screen and (max-width: 403px) {
+    #search-input {
+        width: 200px;
+    }
+}
 
